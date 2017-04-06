@@ -1,0 +1,444 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>tercera aplicacion</title>
+
+<!--grupo CSS-->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<link rel="stylesheet" href="css/tema-app1.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body>
+
+  <div data-role="page" id="Principal" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Contaminación del Planeta </h1>
+   </div>
+   <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+      <h1> Planeta Tierra </h1>
+       <div>
+         <p> El Planeta Tierra esta sufriedno grandes cambios por la contaminaación:</p>
+         <br>
+         </div>
+          <div>
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','imagenes/planeta1.jpg',1)"><img src="imagenes/planeta.jpg" width="100%" height="100%" id="Image8"></a>
+           </div>
+       </div>
+    </div>
+    <div>
+      <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+      <li class="ui-first-child ui-last-child">
+        <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>Definición de Contaminación </h2>
+           <p> Se muestra información sobre la contaminación </p>
+        </a>
+       </li> 
+      <li class="ui-first-child ui-last-child">
+        <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+          <h2>Tipos de Contaminación </h2>
+          <p> Se muestran los tipos de contaminación mas importantes </p>
+        </a>
+      </li>
+      <li class="ui-first-child ui-last-child">
+        <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2> Consecuencias de la Contaminacion </h2>
+           <p>  Se muestra informacion de las consecuencias de la contaminación </p>
+        </a>
+      </li>
+      <li class="ui-first-child ui-last-child">
+        <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2> Regla de las RRR </h2>
+           <p> Se muestran las reglas de las RRR </p>
+        </a>
+      </li>     
+       <li class="ui-first-child ui-last-child">
+        <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2> Medidas de prevención</h2>
+           <p> Se muestran medidas de prevención para eliminar la contaminación</p>
+        </a>
+       </li>               
+       <li class="ui-first-child ui-last-child">
+        <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>Contaminación en mi entorno </h2>
+           <p> Se muestran algunas imagenes de contaminación en mi comunidad </p>
+        </a>
+       </li> 
+      </ul>  
+    </div>
+    <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+      <div>
+        <img src="imagenes/logo.png" width="50" height="50">
+      </div>  
+      <div>
+         <h4>Aplicación tres </h4>
+         <h4> Juan Luis Vazquez Morales </h4>
+      </div>
+    </div> 
+    </div> 
+    <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1> Definición: </h1>
+     </div>
+     <div data-role="content" align="center">
+       <h3 align="justify"> 
+ La contaminación es un concepto de connotación negativa, y es la introducción de una sustancia nociva o contaminante o alguna forma energética, que cambia el medio en el que se introduce, desequilibrándolo. Estos contaminantes tienden a dispersarse, incluso transfiriéndose fuera de su medio, invadiendo otros, y elevar su grado de contaminación, al mezclarse con otros contaminantes.
+La contaminación ambiental es la presencia de sustancias nocivas para los seres vivos que irrumpen en la composición de los elementos naturales, como el agua, el suelo y el aire. Tenemos varias clases de contaminación: atmosférica, hídrica, del suelo, sonora, visual, entre otras.
+       </h3>
+        <div >
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','imagenes/planeta4.jpg',1)"><img src="imagenes/planeta3.jpg" width="100%" height="100%" id="Image9"></a>
+       </div>
+      </div>
+     <div data-role="footer" data-theme="b" data-position="fixed">     
+       <h4> Aplicación tres, JLVM </h4>
+     </div>
+    </div>
+   </div>
+   
+    <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1> Tipos de Contaminación: </h1>
+     </div>
+     <div data-role="content" align="center">
+         <div data-role="collapsible" data-content-theme="false">
+             <h1>Contaminación del Agua: </h1>
+           <div>
+            <p>Existe con la presencia de desechos en el agua. Las principales causas se deben al arrojo de residuos sólidos domésticos (residuos no peligrosos) e industriales, los derrames de petróleo y la descarga de aceites usados. La contaminación en los mares, ríos y lagos se ha convertido en un foco de infecciones y enfermedades para  los seres humanos. </p>
+           <br>
+           </div>
+           <div>
+ <img src="imagenes/planeta5.jpg" width="100%" height="100%">
+           </div>
+         </div>
+        <div data-role="collapsible" data-content-theme="false">
+             <h1>Contaminación Atmosférica o Ambiental: </h1>
+           <div>
+            <p>Consiste en la liberación de sustancias químicas en la atmósfera, las cuales alteran su composición y suponen un riesgo para la salud de las personas y de los seres vivos. Esta contaminación es producida por los  humos de los tubos de escape de los coches y  de las chimeneas de las fábricas, de la quema de basura, de los polvos industriales (cemento, yeso, concentrado de minerales...), de incendios forestales y erupciones volcánicas.  Cada uno de ellos, expulsan al aire gases contaminantes como el monóxido de carbono o dióxido de azufre. </p>
+           <br>
+           </div>
+           <div>
+ <img src="imagenes/planeta6.jpg" width="100%" height="100%">
+           </div>
+         </div>
+         <div data-role="collapsible" data-content-theme="false">
+             <h1>Contaminación del Suelo: </h1>
+           <div>
+            <p> Ocurre cuando se introducen productos químicos como el petróleo y sus derivados, los pesticidas, así como metales pesados frecuentes en las baterías. Los vertederos y cinturones ecológicos, que sirven para enterrar las grandes cantidades de basura que se generan en los campos, están comenzando a contribuir de forma alarmante a la contaminación del suelo. Al igual que el resto, esta contaminación entra en contacto directo con la personas. </p>
+           <br>
+           </div>
+           <div>
+ <img src="imagenes/planeta9.jpg" width="100%" height="100%">
+           </div>
+         </div>
+         <div data-role="collapsible" data-content-theme="false">
+             <h1>Contaminación térmica  </h1>
+           <div>
+            <p>Refiere a la emisión de fluidos a elevada temperatura; se puede producir en cursos de agua. El incremento de la temperatura del medio disminuye la solubilidad del oxígeno en el agua.
+           </p>
+           <br>
+           </div>
+           <div>
+ <img src="imagenes/planeta8.jpg" width="100%" height="100%">
+           </div>
+         </div>
+         <div data-role="collapsible" data-content-theme="false">
+             <h1>Contaminación Acústica o Sonora: </h1>
+           <div>
+            <p>Consiste en los ruidos molestos provocados por los seres humanos que afectan la tranquilidad y salud de todos los seres vivos.
+Principales causas:
+– Ruido de los carros, aviones, helicópteros, etc.
+– Ruido de motores y máquinas industriales.
+– Ruido de equipos electrógenos.
+– Música a alto volumen (polladas, discotecas, etc.).
+– Explosiones (minería, construcción civil, guerras, etc.). </p>
+           <br>
+           </div>
+           <div>
+ <img src="imagenes/planeta7.jpg" width="100%" height="100%">
+           </div>
+         </div>
+        <div data-role="footer" data-theme="b" data-position="fixed">
+          <h4> Aplicación tres, JLVM </h4>
+        </div>
+      </div>    
+     </div> 
+     
+    <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1> Consecuencias de la Contaminación: </h1>
+     </div>  
+     <div align="center">
+       <h2>Consecuencias: </h2>
+     </div>
+     <div align="justify">
+      <p>
+       El ser humano siempre ha pensado en su evolución, en su futuro y en su bien; sin tener en cuenta la naturaleza, los animales y los ecosistemas que cohabitan con él. Sin embargo, cada vez debe atender más a estas necesidades ya que con su actuación está desencadenando las siguientes consecuencias
+      </p>
+      <ul>
+       <li>
+        Degradación del medio ambiente: Desapareciendo ecosistemas, volviendo a la tierra estéril y dejándola sin recursos.
+       </li>
+       <li>
+        Perjudicando la salud humana: Aumentando enfermedades como el cáncer de pulmón, el asma, enfermedades cardiovasculares o irritaciones.
+       </li>
+       <li>
+        Calentamiento global: Derritiendo los glaciares y polos, extinguiendo especies y aumentando el nivel de los océanos.
+       </li>
+       <li>
+        Disminución de la capa de ozono debido a químicos como los CFCs.
+       </li>
+       <li>
+        Volviendo a la tierra infértil.
+       </li>
+      </ul>
+      <p>
+       Todo esto desencadenado por el estilo de vida consumista y la expansión de muchas industrias. De todas formas, aún estamos a tiempo de cambiarlo, pero si seguimos con los ojos vendados, en pocos años, igual dentro de unos 250, el planeta Tierra será solo un simple recuerdo.
+      </p>
+     </div>
+     <div data-role="content" align="center">
+         <div data-role="collapsible" data-content-theme="false">
+             <h1> Calentamiento Global </h1>
+           <div>
+            <h4>¿Qúe es el calentamiento Global? </h4>
+           <br>
+           </div>
+           <div>
+            <p>
+             El término Calentamiento Global se refiere al aumento gradual de las temperaturas de la atmósfera y océanos de la Tierra que se ha detectado en la actualidad, además de su continuo aumento que se proyecta a futuro. Múltiples líneas de pruebas científicas demuestran que el sistema climático se está calentando. Aunque a menudo la prensa popular comunica el incremento de la temperatura atmosférica superficial como medición del calentamiento global, la mayor parte de la energía adicional almacenada en el sistema climático desde 1970 se ha usado en calentar los océanos. El resto ha fundido el hielo y calentado los continentes y la atmósfera.  Muchos de los cambios observados desde la década de 1950 no tienen precedentes en décadas, aun milenios.
+            </p>
+           </div>
+           <div>
+  <p class="estilo5"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','imagenes/planeta11.jpg',1)"><img src="imagenes/planeta10.jpg" alt="sustitucion5" name="Image5" width="100%" height="100%" id="Image5" align="middle"></a></p>
+  <p align="center" class="estilo5">&nbsp;</p>
+           </div>
+         </div>
+      <div data-role="footer" data-theme="b" data-position="fixed">
+        <h4> Aplicación tres, JLVM </h4>
+      </div>
+       </div>    
+    </div> 
+    
+   <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1> Reglas de las RRR: </h1>
+     </div>  
+     <div data-role="content" align="center">
+         <div>
+          Las tres erres (3R) es una regla para cuidar el medio ambiente, específicamente para reducir el volumen de residuos o basura generada. En pocas palabras, las 3R te ayudan a tirar menos basura, ahorrar dinero y ser un consumidor más responsable.
+         </div>
+         <div data-role="collapsible" data-content-theme="false">
+             <h1> Reducir </h1>
+           <div>
+           <p>
+            Si reducimos el problema, disminuimos el impacto en el medio ambiente. Los problemas de concienciación, habría que solucionarlos empezando por esta erre. La reducción puede realizarse en 2 niveles: reducción del consumo de bienes o de energía. Actualmente la producción de energía produce numerosos desechos (desechos nucleares, dióxido de carbono...). El objetivo sería:
+Reducir o eliminar la cantidad de materiales destinados a un uso único (por ejemplo, los embalajes).
+Adaptar los aparatos en función de sus necesidades (por ejemplo poner lavadoras y lavavajillas llenos y no a media carga).
+Reducir pérdidas energéticas o de recursos: de agua, desconexión de aparatos eléctricos en stand by, conducción eficiente, desconectar transformadores, etc.
+           </p>
+           <br>
+           </div>
+           <div>
+            <img src="imagenes/planeta12.jpg" width="100%" height="100%">
+           </div>
+         </div>
+         <div data-role="collapsible" data-content-theme="false">
+             <h1> Reutilizar </h1>
+           <div>
+             <p>
+              Segunda erre más importante, igualmente debido a que también reduce impacto en el medio ambiente, indirectamente. Ésta se basa en reutilizar un objeto para darle una segunda vida útil. Todos los materiales o bienes pueden tener más de una vida útil, bien sea reparándolos para un mismo uso o con imaginación para un uso diferente.
+             </p>
+           <br>
+           </div>
+           <div>
+             <img src="imagenes/planeta13.jpg" width="100%" height="100%">
+           </div>
+         </div>
+          <div data-role="collapsible" data-content-theme="false">
+             <h1> Reciclar</h1>
+           <div>
+            <p>
+             Ésta es una de las erres más populares debido a que el sistema de consumo actual ha preferido usar envases de materiales reciclables (plásticos y briks, sobre todo), pero no biodegradables. De esta forma se necesita el empleo en mayor forma personal y energía en el proceso.
+            </p>
+           <br>
+           </div>
+           <div>
+             <img src="imagenes/planeta14.jpg" width="100%" height="100%">
+           </div>
+         </div>
+      <div data-role="footer" data-theme="b" data-position="fixed">
+        <h4> Aplicación tres, JLVM </h4>
+      </div>
+       </div>    
+    </div>
+     
+    <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>  Medidas Preventivas: </h1>
+     </div>  
+     <div data-role="content" align="center">
+      <div>
+        <h2> Algunas medidas preventivas para combatir la contaminación son: </h2>
+        <br>
+      </div>  
+      <div align="left">
+      <ul>
+        <li>
+         Afina y da mantenimiento a los automóviles
+        </li>
+        <li>
+         Evita quemar basura y llantas, así como el uso de cohetes artificiales
+        </li>
+        <li>
+         Evita comprar artículos desechables y plásticos que no son biodegradables.
+        </li>
+        <li>
+         Recicla la basura
+        </li>
+        <li>
+          No arrojes basura en la calle, bosques y parques, envuélvela o tápala bien en la casa
+        </li>
+        <li>
+         Cuida los bosques al no provocar incendios ni destruir las zonas verdes de la ciudad
+        </li>
+        <li>
+         Consume alimentos orgánicos o al menos aquellos no hayan sido sometidos a un uso tan intensivo de agroquímicos. (puedes cultivarlos en tú azotea con composta hecha por ti mismo)
+        </li>
+        <li>
+         Evita el uso de pinturas, aceites y solventes en días de alta concentración de ozono
+        </li>
+        <li>
+         Reduce el consumo de electricidad, lo cual contribuirá a disminuir las emanaciones de contaminantes y partículas
+        </li>
+        <li>
+         Aplica el poder de las 3 Erres: Reduce-Reutiliza-Recicla. Un menor consumo redundará en menor contaminación atmosférica de todo tipo
+        </li>
+      </ul>
+      </div>
+      </div>
+      <div align="center">
+       <h3> Páginas de campañas para la prevención y cuidado del medio ambiente:</h3>
+      </div>
+        <div data-role="collapsible" data-content-theme="false">
+           <h1> GreenPeace</h1>
+           <div align="center">
+             <a href="http://www.greenpeace.org/" target="_self">Ir a la Página de GreenPeace</a>
+           <br>
+           </div>
+        </div>
+        <div data-role="collapsible" data-content-theme="false">
+           <h1>  La onda Verde</h1>
+           <div align="center">
+             <a href="http://www.laondaverde.org/" target="_self">Ir a la Página de La onda Verde</a>
+           <br>
+           </div>
+        </div>
+          <div data-role="collapsible" data-content-theme="false">
+           <h1>  OMS </h1>
+           <div align="center">
+             <a href="http://www.un.org/" target="_self">Ir a la Página de La OMS</a>
+           <br>
+           </div>
+        </div>
+       <div data-role="footer" data-theme="b" data-position="fixed">
+          <h4> Aplicación tres, JLVM </h4>
+        </div>
+      </div>    
+     </div> 
+      
+     <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="b">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>  Contaminación en mi entorno </h1>
+     </div>  
+     <div data-role="content" align="center">
+      <div>
+        <h2>Imagenes de contaminacion en mi comunidad: </h2>
+        <br>
+      </div> 
+      <div>
+       <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/contaminacion.jpg" alt="contaminacion" title="contaminacion" id="wows1_0"/></li>
+		<li><img src="data1/images/contaminacion2.jpg" alt="contaminacion2" title="contaminacion2" id="wows1_1"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="data1/images/contaminacion3.jpg" alt="image slider" title="contaminacion3" id="wows1_2"/></a></li>
+		<li><img src="data1/images/contaminacion4.jpg" alt="contaminacion4" title="contaminacion4" id="wows1_3"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="contaminacion"><span><img src="data1/tooltips/contaminacion.jpg" alt="contaminacion"/>1</span></a>
+		<a href="#" title="contaminacion2"><span><img src="data1/tooltips/contaminacion2.jpg" alt="contaminacion2"/>2</span></a>
+		<a href="#" title="contaminacion3"><span><img src="data1/tooltips/contaminacion3.jpg" alt="contaminacion3"/>3</span></a>
+		<a href="#" title="contaminacion4"><span><img src="data1/tooltips/contaminacion4.jpg" alt="contaminacion4"/>4</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery slideshow</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+      </div> 
+      <div>
+       <h4> Mis Propuestas para la NO contaminación son: </h4>
+      </div>
+      <div align="left">
+       <ul>
+        <li>
+          Realizar platicas en los colegios e instituciones educativas de concienciación de la contaminación.
+        </li>
+        <li>
+          Afina y da mantenimiento a los automóviles para evitar el humo.
+        </li>
+        <li>
+         Anuncios en la Internet sobre la contaminación.
+        </li>
+        <li>
+         Cerrar la llave de agua de la ducha cuando te enjabones y no lavar los coches con manguera.
+        </li>
+        <li>
+         No tirar la basura en ríos, lagos, manantiales, presas y lagunas principalmente ya que todos o la mayoría de estos 
+        </li>
+        <li>
+         No quemar basura en la calle o en los campos.
+        </li>
+       </ul>
+      </div>
+      <div data-role="footer" data-theme="b" data-position="fixed">
+        <h4> Aplicación tres, JLVM </h4>
+      </div>
+       </div>    
+    </div>
+     
+</body>
+</html>
